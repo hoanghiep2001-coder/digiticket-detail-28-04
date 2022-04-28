@@ -1,0 +1,73 @@
+
+.sliderText{
+    width:100%;
+    margin-bottom:30px;
+    padding: 10px 0 10px 0px;
+    font-weight:bold;
+}
+
+.ui-slider-horizontal {
+    height: .6em;
+}
+.ui-slider-horizontal {
+    margin-bottom: 15px;
+    width:100%;
+}
+.ui-widget-header {
+    background: #3FE331;
+}
+
+.price-range-search {
+    width:100%; 
+    background-color: #f9f9f9; 
+    border: 1px solid #6e6666;
+    min-width: 40%;
+    display: inline-block;
+    height: 32px;
+    border-radius: 5px;
+    float: left;
+    margin-bottom:20px;
+    font-size:16px;
+}
+.price-range-field{
+    width:30%; 
+    background-color:unset; 
+    color: black; 
+    font-family: myFont; 
+    font: normal 14px Arial, Helvetica, sans-serif; 
+    border-radius: 5px; 
+    height:26px; 
+    border: none;
+}
+
+.price-range-field:last-child {
+    text-align: end;
+}
+.search-results-block{
+    position: relative;
+    display: block;
+    clear: both;
+}
+
+div#slider-range {
+    background-color: var(--grey-800);
+    border: none !important;
+
+}
+
+.ui-slider-range.ui-corner-all.ui-widget-header {
+    background-color: var(--yellow-amber-400);
+    border: none !important;
+
+}
+
+span.ui-slider-handle.ui-corner-all.ui-state-default {
+    width: 16px;height: 16px;
+    border-radius: 50%;
+    background-color: var(--yellow-amber-500);
+    border: none;
+}
+
+span.ui-slider-handle.ui-corner-all.ui-state-default.ui-state-focus {
+    border: none;
+}

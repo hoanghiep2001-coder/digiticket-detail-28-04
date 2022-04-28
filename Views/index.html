@@ -1,0 +1,1392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digiticket</title>
+    <link rel="icon" href="../Content/image/home/Group 12854 1.svg">
+    <link rel="stylesheet" href="../Content/css/main.css">
+    <link rel="stylesheet" href="../Content/plugin/slick-master/slick/slick.css">
+    <link rel="stylesheet" href="../Content/plugin/slick-master/slick/slick-theme.css">
+    <link rel="stylesheet" href="../Content/plugin/jquery-ui-1.13.1.custom/jquery-ui.min.css">
+    <!-- <link rel="stylesheet" href="../Content/plugin/Price-Range-Slider-jQuery-UI/Price-Range-Slider-jQuery-UI/price_range_style.css"> -->
+    <!-- <link rel="stylesheet" href="../Content/plugin/rangeslider.js-develop/dist/rangeslider.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Content/plugin/bootstrap-4.6.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../Content/plugin/fancybox/css/fancybox.css">
+    <!-- <link rel="stylesheet" href="../Content/plugin/datepicker/css/daterangepicker.css">
+    <link rel="stylesheet" href="../Content/plugin/datepicker/css/custom.css"> -->
+    <link rel="stylesheet" href="../Content/icomoon/style.css">
+    <link rel="stylesheet" href="../Content/css/common.css">
+    <link rel="stylesheet" href="../Content/css/home.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="header__container container">
+                <!-- logo -->
+                <div class="header-logo">
+                    <a href="#">
+                        <img src="../Content/image/home/Logo.png" alt="" />
+                    </a>
+                </div>
+                <!-- search Bar -->
+                <form action="" class="header-search-Bar">
+                    <input autocomplete="off" name="searchBar" placeholder="Tìm kiếm trên Digiticket" type="text"
+                        class="header-with-search" />
+                    <button type="submit" class="right">
+                        <span class="icon-search"></span>
+                    </button>
+                </form>
+                <div class="header-user">
+                    <!-- account -->
+                    <div class="header-account">
+                        <img src="../Content/image/home/avatar.jpg" alt="" />
+                        <div class="header-account-assets">
+                            <p>Tài khoản</p>
+                            <a href="#" class="text-truncate ">lien.ng281213123213</a>
+                        </div>
+                    </div>
+                    <!-- cart -->
+                    <div class="header-cart">
+                        <div class="ti-shopping-cart">
+                            <img class="" src="../Content/image/home/icon/shopping-cart.svg">
+                            <p>0</p>
+                        </div>
+                        <p>Giỏ hàng</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Menu bar -->
+            <div class="header__subnav">
+                <div class="header__subnav-container container">
+                    <div class="header__subnav-container-bars">
+                        <span class="icon-bar">
+                            <ul class="header__subnav-container-bars-list">
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Lưu trú</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Khách sạn /Resort
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Villa/Căn hộ
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Du thuyền
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Homestay
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Giải trí</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                              header__subnav-container-bars-list-item-sub-ul-li
+                            ">
+                                            Xem phim
+                                        </li>
+                                        <li class="
+                              header__subnav-container-bars-list-item-sub-ul-li
+                            ">
+                                            Địa điểm vui chơi
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Tham quan</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Địa điểm tham quan
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Tour
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Nghệ thuật</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Show ca nhạc
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Sân khấu nghệ thuật
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Thể thao</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Bóng đá
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Di chuyển</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Máy bay
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Ô tô </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Tàu thủy </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Tàu hỏa </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Combo</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Combo du lịch
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="header__subnav-container-bars-list-item js-drop-right">
+                                    <p>Ẩm thực</p>
+                                    <span class="icon-arrow-right header-arrow-right"></span>
+                                    <ul class="header__subnav-container-bars-list-item-sub-ul js-content-drop-right">
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Đồ ăn
+                                        </li>
+                                        <li class="
+                          header__subnav-container-bars-list-item-sub-ul-li
+                        ">
+                                            Đồ uống
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </span>
+                        <h3>DANH MỤC DỊCH VỤ</h3>
+                    </div>
+                    <div class="header__subnav-container-check">
+                        <a href="tel: 1890 000" class="d-flex js-phone-click">
+                            <img src="../Content/image/home/icon/Call.svg" alt="">
+                            <h3>1890 000</h3>
+                        </a>
+
+                        <button class="header__subnav-container-check-button js-check-button">
+                            KIỂM TRA ĐƠN HÀNG
+                            <form action="" id="check-product-form"
+                                class="header__subnav-container-check-button-form js-check-form">
+                                <h3>Kiểm tra đơn hàng</h3>
+                                <div class="header__subnav-container-check-button-form-div">
+                                    <label for="">Vui lòng nhập số điện thoại</label>
+                                    <input name="userPhoneNumber" placeholder="Số điện thoại" type="number"
+                                        class="header__subnav-container-check-button-form-input">
+                                </div>
+                                <div class="header__subnav-container-check-button-form-div">
+                                    <label for="">Vui lòng nhập email</label>
+                                    <input name="userEmail" placeholder="Email" type="email"
+                                        class="header__subnav-container-check-button-form-input">
+                                </div>
+                                <div class="header__subnav-container-check-button-form-div">
+                                    <label for="">Vui lòng nhập mã đơn hàng</label>
+                                    <input name="userProductCode" maxlength="10" placeholder="VD: 0123456789"
+                                        type="text" class="header__subnav-container-check-button-form-input">
+                                </div>
+                                <div class="d-flex" style="justify-content: center;">
+                                    <input type="submit" value="Kiểm tra" placeholder="Kiểm tra"
+                                        class="header__subnav-container-check-button-form-handle btn-hover js-submit-product-form">
+                                </div>
+                            </form>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="Buffet-body">
+                <div class="heading-nav">
+                    <div class="container">
+                        <!-- tab nav -->
+                        <ul class="nav nav-tabs heading-nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link fz-16 lh-20 padt10 padb10 heading-nav-item scroll-to-introduce active"
+                                    id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                    aria-selected="true">Giới thiệu</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link fz-16 lh-20 padt10 padb10 heading-nav-item scroll-to-service"
+                                    id="profile-tab" data-toggle="tab" href="#service" role="tab" aria-controls="profile"
+                                    aria-selected="false">Dịch vụ</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link fz-16 lh-20 padt10 padb10 heading-nav-item scroll-to-schedule"
+                                    id="contact-tab" data-toggle="tab" href="#schedule" role="tab" aria-controls="contact"
+                                    aria-selected="false">Lịch trình</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link fz-16 lh-20 padt10 padb10 heading-nav-item scroll-to-condition"
+                                    id="contact-tab" data-toggle="tab" href="#condition" role="tab" aria-controls="contact"
+                                    aria-selected="false">Điều kiện, Điều khoản</a>
+                            </li>
+                        </ul>
+                        <!-- // end tab nav -->
+                    </div>
+                </div>
+                                    
+                <div class="Buffet-body__container container">
+                    <!-- Gallery -->
+                    <div class="Buffet-body__container-gallery">
+                        <div class="Buffet-body__container-gallery-row row">
+                            <a href="../Content/image/home/thumbnail/thumbnail1.jpg"
+                                class="Buffet-body__container-gallery-col col-lg-6 col-md-6 padr4 fancybox"
+                                data-fancybox="gallery1">
+                                <img src="../Content/image/home/thumbnail/thumbnail1.jpg" alt="">
+                            </a>
+                            <div class="Buffet-body__container-gallery-col col-lg-6 col-md-6 padl0">
+                                <div class="row no-gutters mb8">
+                                    <a href="../Content/image/home/thumbnail/thumbnail2.jpg"
+                                        class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 fancybox padr4 padl4"
+                                        data-fancybox="gallery1">
+                                        <img src="../Content/image/home/thumbnail/thumbnail2.jpg" alt="">
+                                    </a>
+                                    <a href="../Content/image/home/thumbnail/thumbnail3.jpg"
+                                        class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 fancybox padl4 padr4"
+                                        data-fancybox="gallery1">
+                                        <img src="../Content/image/home/thumbnail/thumbnail3.jpg" alt="">
+                                    </a>
+                                    <a href="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                        class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 fancybox padl4"
+                                        data-fancybox="gallery1">
+                                        <img src="../Content/image/home/thumbnail/thumbnail4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="row no-gutters">
+                                    <a href="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                        class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 fancybox padr4 padl4"
+                                        data-fancybox="gallery1">
+                                        <img src="../Content/image/home/thumbnail/thumbnail4.jpg" alt="">
+                                    </a>
+                                    <a href="../Content/image/home/thumbnail/thumbnail5.jpg"
+                                        class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 fancybox padr4 padl4"
+                                        data-fancybox="gallery1">
+                                        <img src="../Content/image/home/thumbnail/thumbnail5.jpg" alt="">
+                                    </a>
+                                    <a href="../Content/image/home/thumbnail/thumbnail6.jpg"
+                                        class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 fancybox padl4 gallery-overlay"
+                                        data-fancybox="gallery1">
+                                        <div class="gallery-plus-overlay fz-36">
+                                            +3
+                                        </div>
+                                        <img src="../Content/image/home/thumbnail/thumbnail6.jpg" alt="">
+                                    </a>
+                                </div>
+
+                                <!-- ẩn ảnh -->
+                                <a href="../Content/image/home/thumbnail/thumbnail2.jpg"
+                                    class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 d-none fancybox"
+                                    data-fancybox="gallery1">
+                                    <img src="../Content/image/home/thumbnail/thumbnail2.jpg" alt="">
+                                </a>
+                                <a href="../Content/image/home/thumbnail/thumbnail3.jpg"
+                                    class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 d-none fancybox"
+                                    data-fancybox="gallery1">
+                                    <img src="../Content/image/home/thumbnail/thumbnail3.jpg" alt="">
+                                </a>
+                                <a href="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                    class="Buffet-body__container-gallery-col-row-col col-lg-4 col-md-6 d-none fancybox"
+                                    data-fancybox="gallery1">
+                                    <img src="../Content/image/home/thumbnail/thumbnail4.jpg" alt="">
+                                </a>
+                                <!-- // hết phần ẩn  -->
+
+                            </div>
+                        </div>
+                    </div>
+                                    <!-- Chọn gói dịch vụ -->
+                    <div class="Buffet-body__container-content row">
+                        <!-- Dịch vụ -->
+                        <div class="Buffet-body__container-content-col col-lg-8">
+                            <!-- title -->
+                            <div id="introduce" class="Buffet-body__container-content-col-title">
+                                <div class="link">
+                                    <div class="d-flex align-items-center mb12">
+                                        <a class="blue-info-500" href="#">Trang chủ</a>
+                                        <span class="icon-arrown-right-blue fz-8"></span>
+                                        <a class="blue-info-500" href="#">Hà Nội</a>
+                                        <span class="icon-arrown-right-blue fz-8"></span>
+                                        <a class="blue-info-500" href="#">Đồ ăn</a>
+                                    </div>
+                                </div>
+                                <div class="title">
+                                    <h3>TOUR HẠ LONG 2 NGÀY 1 ĐÊM TRÊN DU THUYỀN MARGARET CRUISE</h3>
+                                </div>
+                                <div class="location">
+                                    <div class="d-flex align-items-center mt12">
+                                        <span class="icon-location mr8 fz-14"></span>
+                                        <span class="mr16 cursor-pointer">
+                                            Vinwnders Nha Trang, đường Chiến Thắng, Thành phố Nha Trang
+                                        </span>
+                                        <p class="fz-14 lh-18 color-grey-900 fw-500 cursor-pointer">
+                                            - Hiển thị trên bản đồ
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- description -->
+                                <div class="description">
+                                    <p>
+                                        <span class="mr24">
+                                            <span class="icon-no-turn-back mr8"></span>
+                                            Không hoàn hủy
+                                        </span>
+                                        <span class="mr24">
+                                            <span class="icon-has-breakfast mr8"></span>
+                                            Có ăn sáng
+                                        </span>
+                                        <span class="mr24">
+                                            <span class="icon-no-smoking mr8"></span>
+                                            Không hút thuốc
+                                        </span>
+                                        <span class="mr24">
+                                            <span class="icon-meal mr8"></span>
+                                            Nhà hàng
+                                        </span>
+                                        <span class="mr24">
+                                            <span class="icon-no-smoking mr8"></span>
+                                            Free Wifi
+                                        </span>
+                                    </p>
+                                </div>
+                            </div>
+                            <ul class="description-list grey-list-style">
+                                <li class="">
+                                    Xe du lịch 16C, 29C sang trọng phục vụ theo hành trình, lái xe chuyên nghiệp.
+                                </li>
+                                <li>
+                                    Lưu trú: Tiêu chuẩn 2 khách/phòng. Lẻ Nam/Nữ ngủ phòng 03 <br>
+                                    Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                    Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                    (Hoặc các khách sạn có tiêu chuẩn tương đương)
+                                </li>
+                                <li>
+                                    Ăn 05 bữa chính tiêu chuẩn 120.000Đ/bữa, 02 bữa sáng tiêu chuẩn 35.000Đ.
+                                </li>
+                                <li>
+                                    Vé thăm quan thắng cảnh tại tất cả các điểm thăm quan theo chương trình.
+                                </li>
+                            </ul>
+
+                            <!--- // end title -->
+                            <div id="service" class="Buffet-body__container-content-col-service1 pad16">
+                                <h3 class="fw-600 medium fz-20 lh-24 mb16">Đặt dịch vụ</h3>
+                                <div class="start-date pad16 padt20 padb20">
+                                    <h3 class="fz-16 color-error-500 fw-600 medium">Chọn ngày bắt đầu chuyến đi</h3>
+                                    <div class="start-date-container mt8 position-relative">
+                                        <span class="icon-Bag datepicker-icon position-absolute"></span>
+                                        <input name="startDate" class="startDate position-relative" type="text">
+                                        <p class="current-day get-day fz-12 lh-16 color-grey-500 fw-500 position-absolute">hrhr</p>
+                                    </div>
+                                </div>
+                                <!-- service choose -->
+                                <div class="service-choose mb24 mt24">
+                                    <h3 class="fz-14 lh-18 color-grey-700">Chọn dịch vụ</h3>
+                                    <div class="mt12">
+                                        <button class="lh-32 padl8 padr8 fz-14 mr16 service-choose-item active">
+                                            Phòng Suit Du thuyền MARGARET CRUISE
+                                        </button>
+
+                                        <button class="lh-32 padl8 padr8 fz-14 service-choose-item">
+                                            Phòng đôi
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- // end service choose -->
+                                
+                                <!-- count quantity container -->
+                                <div class="number-service-choose">
+                                    <h3 class="fz-14 lh-18 color-grey-700 mb12">Chọn số lượng dịch vụ</h3>
+                                    <div
+                                        class="number-service-container d-flex justify-content-between align-items-center padl16 padr16 padt8 padb8 bg-white mb16">
+                                        <h3 class="fz-16 lh-20 fw-600 meidum color-grey-900 main-name first">
+                                            Tour Hạ Long Hai ngày 1 đêm trên du thuyền MARGARET CRUISE
+                                        </h3>
+                                        <div class="price">
+                                            <p class="fz-12 lh-16 color-grey-500 text-line-through fw-500">
+                                                1.200.000VND
+                                            </p>
+                                            <p class="fz-16 lh-20 color-error-500 fw-600 medium main-price">
+                                                1.200.000đ
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="count d-flex align-items-center position-relative">
+                                                <div class="minus item">
+                                                    -
+                                                </div>
+                                                <input type="number" value="0" maxlength="1" disabled class="quantity item">
+
+                                                </input>
+                                                <div class="plus item">
+                                                    +
+                                                </div>
+
+                                            </div>
+                                            <p class="fz-12 lh-16 mt4 color-grey-500 fw-500">Còn <span>3</span> sp</p>
+                                        </div>
+
+                                    </div>
+
+                                    <div
+                                        class="number-service-container d-flex justify-content-between align-items-center padl16 padr16 padt8 padb8 bg-white mb16">
+                                        <h3 class="fz-16 lh-20 fw-600 meidum color-grey-900 main-name second">
+                                            Tour Hạ Long Hai ngày 2 đêm trên du thuyền MARGARET CRUISE
+                                        </h3>
+                                        <div class="price">
+                                            <p class="fz-12 lh-16 color-grey-500 text-line-through fw-500">
+                                                1.400.000VND
+                                            </p>
+                                            <p class="fz-16 lh-20 color-error-500 fw-600 medium main-price">
+                                                1.400.000đ
+                                            </p>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <div class="count d-flex align-items-center position-relative">
+                                                <div class="minus item">
+                                                    -
+                                                </div>
+                                                <input type="number" value="0" disabled class="quantity item">
+
+                                                </input>
+                                                <div class="plus item">
+                                                    +
+                                                </div>
+
+                                            </div>
+                                            <p class="fz-12 lh-16 mt4 color-grey-500 fw-500">Còn <span>3</span> sp</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <!-- // end count quantity container -->
+                            </div>
+                            <!-- Tour Hightlight -->
+                            <div class="tour-hightlight">
+                                <h3 class="fz-20 lh-24 fw-600 color=grey-900 mt48 mb24">
+                                    Tour Highlight
+                                </h3>
+                                <div class="tour-container position-relative d-flex ">
+
+                                </div>
+                            </div>
+                            <!-- // end Tour Hightlight -->
+
+                            <!-- schedule -->
+                            <div id="schedule" class="schedule">
+                                <h3 class="mt48 mb16 fw-500 medium color-grey-900">Lịch trình </h3>
+                                <div class="schedule-container position-relative">
+
+                                </div>
+
+                            </div>
+                            <!-- // end schedule -->
+
+                            <!-- -->
+                            <div id="condition" class="service-above mt64">
+                                <ul class="nav nav-tabs service-abv-tabs" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link fz-16 lh-20 fw-600 padt10 padb10 medium color-grey-900 service-abv-link active"
+                                            id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                            aria-selected="true">Dịch vụ bao gồm</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link fz-16 lh-20 fw-600 padt10 padb10 medium color-grey-900 service-abv-link"
+                                            id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                            aria-controls="profile" aria-selected="false">Không bao gồm</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link fz-16 lh-20 fw-600 padt10 padb10 medium color-grey-900 service-abv-link"
+                                            id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                            aria-controls="contact" aria-selected="false">Điều khoản</a>
+                                    </li>
+                                </ul>
+                                <div class="tab-content" id="myTabContent">
+                                    <div class="tab-pane fade show active" id="home" role="tabpanel"
+                                        aria-labelledby="home-tab">
+                                        <ul class="description-list ml16">
+                                            <li class="">
+                                                Xe du lịch 16C, 29C sang trọng phục vụ theo hành trình, lái xe chuyên
+                                                nghiệp.
+                                            </li>
+                                            <li>
+                                                Lưu trú: Tiêu chuẩn 2 khách/phòng. Lẻ Nam/Nữ ngủ phòng 03 <br>
+                                                Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                                Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                                (Hoặc các khách sạn có tiêu chuẩn tương đương)
+                                            </li>
+                                            <li>
+                                                Ăn 05 bữa chính tiêu chuẩn 120.000Đ/bữa, 02 bữa sáng tiêu chuẩn 35.000Đ.
+                                            </li>
+                                            <li>
+                                                Vé thăm quan thắng cảnh tại tất cả các điểm thăm quan theo chương trình.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                        <ul class="description-list ml16">
+                                            <li class="">
+                                                Xe du lịch 16C, 29C sang trọng phục vụ theo hành trình, lái xe chuyên
+                                                nghiệp.
+                                            </li>
+                                            <li>
+                                                Lưu trú: Tiêu chuẩn 2 khách/phòng. Lẻ Nam/Nữ ngủ phòng 03 <br>
+                                                Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                                Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                                (Hoặc các khách sạn có tiêu chuẩn tương đương)
+                                            </li>
+                                            <li>
+                                                Ăn 05 bữa chính tiêu chuẩn 120.000Đ/bữa, 02 bữa sáng tiêu chuẩn 35.000Đ.
+                                            </li>
+                                            <li>
+                                                Vé thăm quan thắng cảnh tại tất cả các điểm thăm quan theo chương trình.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                                        <ul class="description-list ml16">
+                                            <li class="">
+                                                Xe du lịch 16C, 29C sang trọng phục vụ theo hành trình, lái xe chuyên
+                                                nghiệp.
+                                            </li>
+                                            <li>
+                                                Lưu trú: Tiêu chuẩn 2 khách/phòng. Lẻ Nam/Nữ ngủ phòng 03 <br>
+                                                Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                                Tại Yên Minh: Khách sạn Kiên Thảo 2* <br>
+                                                (Hoặc các khách sạn có tiêu chuẩn tương đương)
+                                            </li>
+                                            <li>
+                                                Ăn 05 bữa chính tiêu chuẩn 120.000Đ/bữa, 02 bữa sáng tiêu chuẩn 35.000Đ.
+                                            </li>
+                                            <li>
+                                                Vé thăm quan thắng cảnh tại tất cả các điểm thăm quan theo chương trình.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // -->
+
+                            <!-- product review -->
+                            <div class="product-reviews">
+                                <h3 class="mb40 fz-32 lh-40 color-grey-900 fw-600">Đánh giá sản phẩm</h3>
+                                <div class="review-filter">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-3">
+                                            <div class="row">
+                                                <div class="col-lg-12 d-flex align-items-center">
+                                                    <h3 class="review-rating-star mb4 fz-36 fw-600 medium">
+                                                        5.0
+                                                    </h3>
+                                                    <div class="star-container ml8 d-flex">
+                                                        <span class="icon-Path"></span>
+                                                        <span class="icon-Path ml4"></span>
+                                                        <span class="icon-Path ml4"></span>
+                                                        <span class="icon-Path ml4"></span>
+                                                        <span class="icon-Path ml4"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <p class="fw-500 fz-16 lh-20 color-grey-700">
+                                                        <span class="fw-500 fz-16 lh-20 color-grey-700">530</span> Đánh
+                                                        giá
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="filter-container d-flex flex-wrap">
+                                                <div class="filter-item">
+                                                    <p>Tất cả</p>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <p>5 sao (345)</p>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <p>5 sao (345)</p>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <p>5 sao (345)</p>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <p>5 sao (345)</p>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <p>Tất cả</p>
+                                                </div>
+                                                <div class="filter-item">
+                                                    <p>Có hình ảnh (300)</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="reviews-container">
+                                    <div class="row user-preview mt24">
+                                        <div class="col-lg-2">
+                                            <img src="../Content/image/home/preview-avt.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row flex-column preview-border-btm">
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="user-account d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h3 class="fz-16 lh-20 fw-600 medium color-grey-900">Tên
+                                                                người dùng</h3>
+                                                            <div class="user-rate d-flex mt8 align-items-center">
+                                                                <span class="icon-Path"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <h3 class="fz-14 lh-16 fw-600 color-grey-900 ml8">Rất
+                                                                    hài lòng</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <button
+                                                                class="rate-useful d-flex align-items-center bg-white padl16 padr16">
+                                                                <span class="icon-like mr8"></span>
+                                                                <p class="fz-14 color-grey-700 fw-500">Hữu ích
+                                                                    <span>(8)</span>
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                    <p
+                                                        class="mt8 mb16 color-grey-700 fw-500 fz-14 lh-18 d-flex align-items-center">
+                                                        Đánh giá cho: <span class="ml8 mr4">Sản phẩm</span> / <span
+                                                            class="ml4">Dịch vụ 01</span>
+                                                    </p>
+                                                    <p class="user-comment color-grey-700 fz-14 lh-20 fw-500 mb16">
+                                                        Chỉ để biết đặt phòng của bạn tôi đã bị hủy khi chúng tôi đến
+                                                        văn phòng xe buýt xanh. Phải trả thêm 250.000 đồng để lên xe
+                                                        buýt, trong khi không nhận được bất kỳ lời giải thích nào về lý
+                                                        do
+                                                    </p>
+                                                    <div class="user-slider-container">
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail2.jpg"
+                                                                class="fancybox" data-fancybox="gallery2       ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail2.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail3.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail3.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail5.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail5.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail6.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail6.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail7.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail7.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail8.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail8.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail9.jpg"
+                                                                class="fancybox" data-fancybox="gallery2     ">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail9.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="time-comment fz-12 lh-16 color-grey-500 fw-500 mb16">
+                                                        <span>25 </span>/<span>07</span>/<span>2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user-preview mt24">
+                                        <div class="col-lg-2">
+                                            <img src="../Content/image/home/preview-avt.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row flex-column preview-border-btm">
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="user-account d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h3 class="fz-16 lh-20 fw-600 medium color-grey-900">Tên
+                                                                người dùng</h3>
+                                                            <div class="user-rate d-flex mt8 align-items-center">
+                                                                <span class="icon-Path"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <h3 class="fz-14 lh-16 fw-600 color-grey-900 ml8">Rất
+                                                                    hài lòng</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <button
+                                                                class="rate-useful d-flex align-items-center bg-white padl16 padr16">
+                                                                <span class="icon-like mr8"></span>
+                                                                <p class="fz-14 color-grey-700 fw-500">Hữu ích
+                                                                    <span>(8)</span>
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                    <p
+                                                        class="mt8 mb16 color-grey-700 fw-500 fz-14 lh-18 d-flex align-items-center">
+                                                        Đánh giá cho: <span class="ml8 mr4">Sản phẩm</span> / <span
+                                                            class="ml4">Dịch vụ 01</span>
+                                                    </p>
+                                                    <p class="user-comment color-grey-700 fz-14 lh-20 fw-500 mb16">
+                                                        Chỉ để biết đặt phòng của bạn tôi đã bị hủy khi chúng tôi đến
+                                                        văn phòng xe buýt xanh. Phải trả thêm 250.000 đồng để lên xe
+                                                        buýt, trong khi không nhận được bất kỳ lời giải thích nào về lý
+                                                        do
+                                                    </p>
+
+                                                    <p class="time-comment fz-12 lh-16 color-grey-500 fw-500 mb16">
+                                                        <span>25 </span>/<span>07</span>/<span>2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user-preview mt24">
+                                        <div class="col-lg-2">
+                                            <img src="../Content/image/home/preview-avt.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row flex-column preview-border-btm">
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="user-account d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h3 class="fz-16 lh-20 fw-600 medium color-grey-900">Tên
+                                                                người dùng</h3>
+                                                            <div class="user-rate d-flex mt8 align-items-center">
+                                                                <span class="icon-Path"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <h3 class="fz-14 lh-16 fw-600 color-grey-900 ml8">Rất
+                                                                    hài lòng</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <button
+                                                                class="rate-useful d-flex align-items-center bg-white padl16 padr16">
+                                                                <span class="icon-like mr8"></span>
+                                                                <p class="fz-14 color-grey-700 fw-500">Hữu ích
+                                                                    <span>(8)</span>
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                    <p
+                                                        class="mt8 mb16 color-grey-700 fw-500 fz-14 lh-18 d-flex align-items-center">
+                                                        Đánh giá cho: <span class="ml8 mr4">Sản phẩm</span> / <span
+                                                            class="ml4">Dịch vụ 01</span>
+                                                    </p>
+                                                    <p class="user-comment color-grey-700 fz-14 lh-20 fw-500 mb16">
+                                                        Chỉ để biết đặt phòng của bạn tôi đã bị hủy khi chúng tôi đến
+                                                        văn phòng xe buýt xanh. Phải trả thêm 250.000 đồng để lên xe
+                                                        buýt, trong khi không nhận được bất kỳ lời giải thích nào về lý
+                                                        do
+                                                    </p>
+                                                    <div class="user-slider-container">
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail2.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail2.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail3.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail3.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail4.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail5.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail5.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail6.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail6.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail7.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail7.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail8.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail8.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="content position-relative">
+                                                            <a href="../Content/image/home/thumbnail/thumbnail9.jpg"
+                                                                class="fancybox" data-fancybox="gallery3">
+                                                                <img src="../Content/image/home/thumbnail/thumbnail9.jpg"
+                                                                    alt="">
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <p class="time-comment fz-12 lh-16 color-grey-500 fw-500 mb16">
+                                                        <span>25 </span>/<span>07</span>/<span>2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user-preview mt24">
+                                        <div class="col-lg-2">
+                                            <img src="../Content/image/home/preview-avt.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row flex-column preview-border-btm">
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="user-account d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h3 class="fz-16 lh-20 fw-600 medium color-grey-900">Tên
+                                                                người dùng</h3>
+                                                            <div class="user-rate d-flex mt8 align-items-center">
+                                                                <span class="icon-Path"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <h3 class="fz-14 lh-16 fw-600 color-grey-900 ml8">Rất
+                                                                    hài lòng</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <button
+                                                                class="rate-useful d-flex align-items-center bg-white padl16 padr16">
+                                                                <span class="icon-like mr8"></span>
+                                                                <p class="fz-14 color-grey-700 fw-500">Hữu ích
+                                                                    <span>(8)</span>
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                    <p
+                                                        class="mt8 mb16 color-grey-700 fw-500 fz-14 lh-18 d-flex align-items-center">
+                                                        Đánh giá cho: <span class="ml8 mr4">Sản phẩm</span> / <span
+                                                            class="ml4">Dịch vụ 01</span>
+                                                    </p>
+                                                    <p class="user-comment color-grey-700 fz-14 lh-20 fw-500 mb16">
+                                                        Chỉ để biết đặt phòng của bạn tôi đã bị hủy khi chúng tôi đến
+                                                        văn phòng xe buýt xanh. Phải trả thêm 250.000 đồng để lên xe
+                                                        buýt, trong khi không nhận được bất kỳ lời giải thích nào về lý
+                                                        do
+                                                    </p>
+                                                    <p class="time-comment fz-12 lh-16 color-grey-500 fw-500 mb16">
+                                                        <span>25 </span>/<span>07</span>/<span>2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row user-preview mt24">
+                                        <div class="col-lg-2">
+                                            <img src="../Content/image/home/preview-avt.jpg" alt="">
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <div class="row flex-column preview-border-btm">
+                                                <div class="col-lg-12">
+                                                    <div
+                                                        class="user-account d-flex align-items-center justify-content-between">
+                                                        <div>
+                                                            <h3 class="fz-16 lh-20 fw-600 medium color-grey-900">Tên
+                                                                người dùng</h3>
+                                                            <div class="user-rate d-flex mt8 align-items-center">
+                                                                <span class="icon-Path"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <span class="icon-Path ml4"></span>
+                                                                <h3 class="fz-14 lh-16 fw-600 color-grey-900 ml8">Rất
+                                                                    hài lòng</h3>
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <button
+                                                                class="rate-useful d-flex align-items-center bg-white padl16 padr16">
+                                                                <span class="icon-like mr8"></span>
+                                                                <p class="fz-14 color-grey-700 fw-500">Hữu ích
+                                                                    <span>(8)</span>
+                                                                </p>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                    <p
+                                                        class="mt8 mb16 color-grey-700 fw-500 fz-14 lh-18 d-flex align-items-center">
+                                                        Đánh giá cho: <span class="ml8 mr4">Sản phẩm</span> / <span
+                                                            class="ml4">Dịch vụ 01</span>
+                                                    </p>
+                                                    <p class="user-comment color-grey-700 fz-14 lh-20 fw-500 mb16">
+                                                        Chỉ để biết đặt phòng của bạn tôi đã bị hủy khi chúng tôi đến
+                                                        văn phòng xe buýt xanh. Phải trả thêm 250.000 đồng để lên xe
+                                                        buýt, trong khi không nhận được bất kỳ lời giải thích nào về lý
+                                                        do
+                                                    </p>
+                                                    <p class="time-comment fz-12 lh-16 color-grey-500 fw-500 mb16">
+                                                        <span>25 </span>/<span>07</span>/<span>2022</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- // end product review -->
+                        </div>
+
+                        <!-- Khoảng trắng -->
+                        <div class="Buffet-body__container-content-col col-lg-1">
+
+                        </div>
+                        <!-- Thông tin đặt hàng -->
+                        <div class="Buffet-body__container-content-col order col-lg-3">
+                            <div class="Buffet-body__container-content-col-border-radius position-sticky">
+                                <div class="Buffet-body__container-content-col-info">
+                                    <h3 class="fw-500 medium">THÔNG TIN ĐẶT HÀNG</h3>
+
+                                    <div class="info-product pad8">
+                                        <!-- buffet -->
+                                        <div class="info-product-buffet overflow-hidden">
+                                            <div class="row no-gutters">
+                                                <div class="col-lg-4 ">
+                                                    <p class="fz-12 lh-16 color-grey-500 font-weight-normal">Ngày đi</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div
+                                                        class="fz-12 lh-16 color-grey-900 text-justify d-flex align-items-center justify-content-end">
+                                                        <span class="blue-info-500">08:00</span>
+                                                        <p class="ml4 mr4">ngày</p>
+                                                        <span class="blue-info-500">30/07/2020</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-gutters mt4 mb4">
+                                                <div class="col-lg-4">
+                                                    <p class="fz-12 lh-16 color-grey-500 font-weight-normal">Ngày về</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div
+                                                        class="fz-12 lh-16 color-grey-900 text-justify d-flex align-items-center justify-content-end">
+                                                        <span class="blue-info-500">08:00</span>
+                                                        <p class="ml4 mr4">ngày</p>
+                                                        <span class="blue-info-500">30/07/2020</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row no-gutters border-top-grey-400 padt8">
+                                                <div class="col-lg-4">
+                                                    <p class="fz-12 lh-16 color-grey-500 font-weight-normal">Dịch vụ</p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <p
+                                                        class="fz-12 lh-16 color-grey-900 text-justify compare-with-service text-right">
+                                                        Vé xe giường nằm chất lượng cao 2 chiều đi Hà Nội - Lào Cai</p>
+                                                </div>
+                                            </div>
+                                            <div class="row mt4 no-gutters">
+                                                <div class="col-lg-4">
+                                                    <p class="fz-12 lh-16 color-grey-500 font-weight-normal">Số lượng
+                                                    </p>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <p
+                                                        class="fz-12 lh-16 color-grey-900 text-justify compare-with-quantity text-right">
+                                                        Chất lượng và Giá tiền loại 2 của dịch vụ vé xe giường nằm</p>
+                                                    <div class="row mt4 mb4">
+                                                        <div
+                                                            class="offset-lg-3 d-flex align-items-center justify-content-between">
+
+                                                        </div>
+                                                        <div
+                                                            class="col-lg-9 d-flex align-items-center justify-content-between">
+                                                            <span
+                                                                class="fz12 lh-16 color-error-500 product-price">1.200.000vnđ</span>
+                                                            <span class="fz12 lh-16 compare-with-price">x2</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <p class="fz-12 lh-16 color-grey-900 text-justify text-right">Chất
+                                                        lượng và Giá tiền loại 2 của dịch vụ vé xe giường nằm</p>
+                                                    <div class="row mt4 mb4">
+                                                        <div
+                                                            class="offset-lg-3 d-flex align-items-center justify-content-between">
+
+                                                        </div>
+                                                        <div
+                                                            class="col-lg-9 d-flex align-items-center justify-content-between">
+                                                            <span
+                                                                class="fz12 lh-16 color-error-500 product-price ">1.200.000vnđ</span>
+                                                            <span class="fz12 lh-16 compare-with-price">x2</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="Buffet-body__container-content-col-info-order">
+                                        <div class="row">
+                                            <div class="col-lg-12 d-flex justify-content-between align-items-center">
+                                                <p>Tạm tính</p>
+                                                <div class="js-auto-count fz-16 lh-20 fw-600 medium">2.400.000VNĐ</div>
+                                            </div>
+                                            <div class="col-lg-12 d-flex justify-content-between align-items-center">
+                                                <p class="lh-20">Giá gốc</p>
+                                                <div
+                                                    class="js-auto-count text-line-through fz-14 lh-20 color-grey-700 fw-500">
+                                                    3.6000.000vnđ</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="Buffet-addcart-and-order">
+                                        <button class="add-cart">Thêm vào giỏ</button>
+                                        <button class="order-product">ĐẶT NGAY</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Có thể bạn quan tâm -->
+                    <section class="mb60">
+                        <h3 class="fz-24 lh-30 fw-600 color-grey-900 mb24 mt46">
+                            Có thể bạn quan tâm
+                        </h3>
+                        <div class="body__container-sale-product For-you">
+                            <div class="
+                                        body__container-sale-product-row
+                                        row
+                                        for-you
+                                        js-Hot-product
+                                        buffet
+                                        active
+                                    ">
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__container container">
+            <div class="footer__container-row row">
+                <div class="footer__container-col col">
+                    <span class="icon-Digiticket-Black logo-footer"></span>
+                    <p class="footer__container-display-flex mb0 mt28">
+                        <span class="mr12">E.</span>
+                        <a style="color: #fff" href="#">booking@digiticket.vn</a>
+                    </p>
+                    <p class="footer__container-display-flex">
+                        <span class="mr12">P.</span>
+                        <a href="tel: 1900 252580">1900 252580</a>
+                    </p>
+                </div>
+                <div class="footer__container-col col">
+                    <h3>Về digiticket</h3>
+                    <ul class="footer__container-col-list">
+                        <li class="footer__container-col-list-item">Giới thiệu</li>
+                        <li class="footer__container-col-list-item">
+                            Chính sách bảo mật thông tin
+                        </li>
+                        <li class="footer__container-col-list-item">
+                            Cơ chế giải quyết tranh chấp
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__container-col col">
+                    <h3>Chăm sóc khách hàng</h3>
+                    <ul class="footer__container-col-list">
+                        <li class="footer__container-col-list-item">
+                            Hướng dẫn đặt hàng
+                        </li>
+                        <li class="footer__container-col-list-item">
+                            Hướng dẫn thanh toán
+                        </li>
+                        <li class="footer__container-col-list-item">
+                            Chăm sóc khách hàng
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__container-col col">
+                    <h3>Digi Blog</h3>
+                    <ul class="footer__container-col-list">
+                        <li class="footer__container-col-list-item">Blog Ẩm thực</li>
+                        <li class="footer__container-col-list-item">Blog Du lịch</li>
+                        <li class="footer__container-col-list-item">Blog Địa điểm</li>
+                    </ul>
+                </div>
+                <div class="footer__container-col col-3">
+                    <h3>Đăng ký nhận khuyến mại</h3>
+                    <div class="footer__container-col-form">
+                        <input placeholder="Nhập email" type="text" class="footer__container-col-email" />
+                        <button class="footer__container-col-button btn-hover">Đăng ký</button>
+                    </div>
+                    <p>
+                        * Đừng bỏ lỡ hàng ngàn sản phẩm và chương trình siêu hấp dẫn sẽ được gửi trực tiếp đến email
+                        của bạn
+                    </p>
+                    <div class="d-flex align-items-center footer-social-icon">
+                        <img src="../Content/image/home/Inssta.svg" alt="">
+                        <img class="ml16" src="../Content/image/home/FB.svg" alt="">
+                    </div>
+
+                </div>
+            </div>
+            <div style="margin-top: 36px" class="footer-clear-fix"></div>
+            <div class="footer__ending container">
+                <h3>
+                    © 2020 - Bản quyền thuộc CÔNG TY TNHH MỘT THÀNH VIÊN SÀN GIAO DỊCH DIGITICKET
+                </h3>
+                <div class="footer__ending-content">
+                    <div class="footer__ending-content-left">
+                        <p>
+                            Giấy chứng nhận Đăng Ký Kinh Doanh số 0109287103, cấp ngày 30/07/2020 tại Sở Kế hoạch
+                            Đầu tư Hà Nội
+                        </p>
+                        <p>
+                            Địa chỉ: Số 34 Hàng Bè, Phường Hàng Bạc, Quận Hoàn Kiếm, Thành phố Hà Nội
+                        </p>
+                    </div>
+                    <div class="footer__ending-content-right">
+                        <img src="../Content/image/home/logo.svg" alt="" />
+                        <img src="../Content/image/home/Frame 671 1.png" alt="" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+
+    <!-- scroll to top -->
+    <div class="container position-fixed scroll-top-behavior z-idx-10000">
+        <i class="bi bi-arrow-bar-up fz-20 scroll-top-icon"></i>
+    </div>
+    </div>
+    </div>
+</body>
+<script>
+    // let dateRangeTitleCustom = 
+    // '<h3 class="d-flex">Chiều <p class="ml4 mr4">Đi</p> <div class="mr8 d-flex align-items-center"><span class="first-place">Hà Nội - </span> <span class="second-place ml4">Huế</span></div></h3>';
+
+    // let datePickerPrevIcon =
+    // '<span class="icon-arrow-left1"></span>';
+    // let datePickerNextIcon =
+    // '<span class="icon-arrow-right"></span>';
+</script>
+<script src="../Content/plugin/jquery/ajax.js"></script>
+<script src="../Content/plugin/jquery/jquery.js"></script>
+<script src="../Content/plugin/bootstrap-4.6.1-dist/js/bootstrap.js"></script>
+<script src="../Content/plugin/jquery/migrate.js"></script>
+<script src="../Content/plugin/jquery/popper.js"></script>
+<script src="../Content/plugin/slick-master/slick/slick.min.js"></script>
+<script src="../Content/plugin/fancybox/js/fancybox.min.js"></script>
+
+<!-- <script src="../Content/plugin/rangeslider.js-develop/dist/rangeslider.js"></script> -->
+<!-- <script src="../Content/plugin/Price-Range-Slider-jQuery-UI/price_range_script.js"></script> -->
+<script src="../Content/plugin/datepicker/js/moment.js"></script>
+<script>
+    $(document).ready(function () {
+        moment.locale('vi')
+      moment().format('LL')  
+    });
+    
+</script>
+<script src="../Content/plugin/jquery-ui-1.13.1.custom/jquery-ui.min.js"></script>
+
+<!-- <script src="../Content/plugin/Price-Range-Slider-jQuery-UI/Price-Range-Slider-jQuery-UI/price_range_script.js"></script> -->
+<!-- validate -->
+<script src="../Content/plugin/validate/jquery.validate.min.js"></script>
+<!-- end validate -->
+<!-- datepicker -->
+<!-- <script src="../Content/plugin/datepicker/js/lunar.js"></script>
+<script src="../Content/plugin/datepicker/js/jquery.daterangepicker.min.js"></script> -->
+<!-- end datepicker -->
+
+<script src="../Content/js/common/common.js"></script>
+<script src="../Content/js/common-pages/home.js"></script>
+<script>
+    $(function () {
+        $('.tour-container').slick({
+
+            autoplay: true,
+            centerMode: false,
+            variableWidth: true,
+            slidesToShow: 4,
+            centerPadding: '60px',
+            initialSlide: 0,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+
+
+        $('.user-slider-container').slick({
+            variableWidth: true,
+            centerMode: false,
+            slidesToShow: 6,
+            centerPadding: '60px',
+            initialSlide: 0,
+            responsive: [
+                {
+                    breakpoint: 768,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        arrows: true,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 2
+                    }
+                }
+            ]
+        });
+
+        $('.slick-next.slick-arrow').html('<img src="../Content/image/home/slick-slider-arrow-right.svg" alt="">');
+        $('.slick-next.slick-arrow').addClass('position-absolute');
+        $('.slick-prev.slick-arrow').html('<img src="../Content/image/home/slick-slider-arrow-right.svg" alt="">');
+        $('.slick-prev.slick-arrow').addClass('position-absolute');
+    });
+</script>
+<script src="../Content/plugin/validate/validate.js"></script>
+
+</html>
